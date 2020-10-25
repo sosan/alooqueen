@@ -1,5 +1,10 @@
+<img src="./img/web.png">
+
+
+
+
 # Plantilla FrontEnd
-##### Plantilla Básica para poder empezar casi cualquier proyecto en **FrontEnd**.
+##### Plantilla Básica para poder empezar casi cualquroyecto en **FrontEnd**.
 
 ~~~
 Metodología de carpetas en FrontEnd
