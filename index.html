@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="utf-8" />
     <!-- SEO = Básico -->
     <title></title>
@@ -21,34 +21,341 @@
 
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./css/customNormalize.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <div id="container">
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
-    <header>
-      <!-- nav (el navegador de toda la web) -->
-      <nav>
-        <a href="" class="link1">link1</a>
-        <a href="" class="link2">link2</a>
-        <a href="" class="link3">link3</a>
-        <a href="" class="link4">link4</a>
-      </nav>
-    </header>
-    <!-- Main (centro de la página, zona central) -->
-    <main>
-      <!-- section y article (posibilidades dentro de main) -->
-    </main>
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
-      <h6>&copy;Copyright</h6>
-    </footer>
+</head>
+<body>
+    <div class="container" id="arriba">
+        <header class="container__header">
+            <ul class="header__ul">
+                <li class="ul__logo">
+                    <img src="./img/desktop/calabaza.png" alt="logo nombre_empresa">
+                    <h1 class="logo__titulo">Lorem</h1>
+                </li>
+                <li class="ul__nav">
+                    <nav class="nav__nav">
+                        <a href="#precios" class="nav__link1">Precios</a>
+                        <a href="#localizacion" class="nav__link2">Localizacion</a>
+                        <a href="#contacto" class="nav__link3">Contacto</a>
+                        <a href="#" class="nav__link4">link4</a>
+                    </nav>
+
+                </li>
+                <li class="ul__localizacion">
+                    <ul class="localizacion__loca">
+                        <li class="loca__elemento">
+                            <svg class="elemento__svg" alt="icono localization" fill="white"  viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.545 12.917C21.5172 12.917 23.1978 13.6114 24.5867 15.0003C25.9756 16.3892 26.67 18.0559 26.67 20.0003C26.67 21.9448 25.9756 23.6114 24.5867 25.0003C23.1978 26.3892 21.5172 27.0837 19.545 27.0837C17.5728 27.0837 15.8922 26.3892 14.5034 25.0003C13.1145 23.6114 12.42 21.9448 12.42 20.0003C12.42 18.0559 13.1145 16.3892 14.5034 15.0003C15.8922 13.6114 17.5728 12.917 19.545 12.917ZM35.42 18.2503H39.0867V21.7503H35.42C35.0311 25.4725 33.5172 28.6531 30.8784 31.292C28.2395 33.9309 25.0589 35.4725 21.3367 35.917V39.5837H17.7534V35.917C14.0867 35.4725 10.92 33.9309 8.25336 31.292C5.58669 28.6531 4.05891 25.4725 3.67002 21.7503H0.00335693V18.2503H3.67002C4.05891 14.5281 5.58669 11.3475 8.25336 8.70866C10.92 6.06977 14.0867 4.5281 17.7534 4.08366V0.416992H21.3367V4.08366C25.0589 4.5281 28.2395 6.06977 30.8784 8.70866C33.5172 11.3475 35.0311 14.5281 35.42 18.2503ZM19.5867 32.417C23.0311 32.417 25.9617 31.2087 28.3784 28.792C30.795 26.3753 32.0034 23.4448 32.0034 20.0003C32.0034 16.5559 30.795 13.6253 28.3784 11.2087C25.9617 8.79199 23.0311 7.58366 19.5867 7.58366C16.1422 7.58366 13.1978 8.79199 10.7534 11.2087C8.30891 13.6253 7.08669 16.5559 7.08669 20.0003C7.08669 23.4448 8.30891 26.3753 10.7534 28.792C13.1978 31.2087 16.1422 32.417 19.5867 32.417Z" />
+                            </svg>
+
+                        </li>
+                        <li class="loca__elemento">
+                            <a href="#localizacion">
+                                <h3 class="elemento__arriba">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Zona de redes solciales -->
+                <li class="ul__redes">
+                    <ul class="redes__iconosredes">
+                        <li class="iconosredes__elemento">
+                            <a href="https://www.facebook.com">
+                                <svg class="iconosredes__img" alt="icono facebook" fill="white" viewBox="0 0 12 23"  xmlns="http://www.w3.org/2000/svg" >
+                                    <path
+                                    d="M2.8581 23V12.2077H0.00439453V8.322H2.8581V5.00307C2.8581 2.39504 4.54379 0 8.42798 0C10.0006 0 11.1635 0.150765 11.1635 0.150765L11.0719 3.77938C11.0719 3.77938 9.88593 3.76784 8.59174 3.76784C7.19104 3.76784 6.96663 4.41333 6.96663 5.48469V8.322H11.1832L10.9998 12.2077H6.96663V23H2.8581Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="iconosredes__elemento">
+                            <a href="https://www.twitter.com">
+                                <svg class="iconosredes__img" alt="icono twitter" fill="white" viewBox="0 0 29 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.7148 5.80125C25.7337 6.05646 25.7338 6.31021 25.7338 6.56396C25.7338 14.3296 19.8231 23.2779 9.02125 23.2779C5.69333 23.2779 2.60167 22.314 0 20.6398C0.4725 20.6938 0.9275 20.7127 1.41896 20.7127C4.06291 20.7191 6.63198 19.835 8.71208 18.2029C7.48624 18.1807 6.29792 17.7763 5.31306 17.0461C4.32819 16.3159 3.59594 15.2963 3.21854 14.1298C3.58167 14.1838 3.94625 14.2202 4.32833 14.2202C4.85479 14.2202 5.38417 14.1473 5.87562 14.0204C4.54528 13.7518 3.34902 13.0307 2.49028 11.9797C1.63153 10.9288 1.1633 9.61282 1.16521 8.25563V8.18271C1.94833 8.61875 2.85687 8.89146 3.81938 8.92792C3.01305 8.3921 2.35188 7.66503 1.89487 6.81157C1.43786 5.95811 1.19921 5.00479 1.20021 4.03667C1.20021 2.94583 1.49042 1.94542 1.99938 1.07333C3.47541 2.88899 5.31636 4.37436 7.40299 5.43325C9.48962 6.49214 11.7754 7.10094 14.1123 7.22021C14.0219 6.78271 13.9665 6.32917 13.9665 5.87417C13.9661 5.10265 14.1178 4.33863 14.4128 3.62577C14.7079 2.91291 15.1406 2.26519 15.6861 1.71965C16.2317 1.17411 16.8794 0.741433 17.5922 0.446364C18.3051 0.151296 19.0691 -0.000382636 19.8406 7.24884e-07C21.5323 7.24884e-07 23.0592 0.70875 24.1325 1.855C25.4476 1.60069 26.7087 1.12062 27.86 0.436042C27.4216 1.79348 26.5034 2.94453 25.2773 3.67354C26.4436 3.54051 27.5835 3.23379 28.6592 2.76354C27.8558 3.93473 26.8603 4.96175 25.7148 5.80125V5.80125Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="iconosredes__elemento">
+                            <a href="https://www.instagram.com">
+                                <svg class="iconosredes__img" alt="icono instagram" fill="white" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                    d="M24.3952 4.71339C24.0073 3.79104 23.448 2.95521 22.7486 2.25269C22.0486 1.54808 21.2234 0.988137 20.3177 0.603309C19.3786 0.202681 18.3713 -0.0023828 17.3544 2.08888e-05C15.9278 2.08888e-05 14.5358 0.401222 13.3262 1.15905C13.0368 1.34033 12.7619 1.53945 12.5014 1.75639C12.241 1.53945 11.9661 1.34033 11.6767 1.15905C10.4671 0.401222 9.07511 2.08888e-05 7.64845 2.08888e-05C6.62113 2.08888e-05 5.62564 0.202108 4.68514 0.603309C3.77647 0.989651 2.95751 1.54539 2.25431 2.25269C1.55399 2.95441 0.994552 3.79044 0.607708 4.71339C0.205463 5.6733 0 6.69265 0 7.74172C0 8.73135 0.196782 9.76258 0.587452 10.8117C0.914457 11.6884 1.38326 12.5977 1.98229 13.516C2.93147 14.9693 4.2366 16.4849 5.85715 18.0214C8.54265 20.5683 11.2021 22.3276 11.315 22.3989L12.0008 22.8507C12.3046 23.0498 12.6953 23.0498 12.9992 22.8507L13.685 22.3989C13.7979 22.3246 16.4544 20.5683 19.1428 18.0214C20.7634 16.4849 22.0685 14.9693 23.0177 13.516C23.6167 12.5977 24.0884 11.6884 24.4125 10.8117C24.8032 9.76258 25 8.73135 25 7.74172C25.0029 6.69265 24.7974 5.6733 24.3952 4.71339Z" />
+                                </svg>
+                            </a>
+                                
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="header__informacion">
+                <li class="informacion__titulo">
+                    <h1 class="texto__titulo">Lorem ipsum dolor sit amet</h1>
+                </li>
+                <li class="informacion__subtitulo">
+                    <h1 class="texto__subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in vero voluptas sint ad omnis soluta voluptates nostrum quo culpa rerum quas, quod expedita inventore eos corrupti id tempore dolor.</h1>
+                </li>
+                <li  class="informacion__boton">
+                    <button class="boton__boton">
+                        Mas&nbsp;Informacion
+                    </button>
+                </li>
+            </ul>
+
+
+        </header>
+        <main>
+            <section class="precios" >
+
+                <!-- flex -->
+                <ul class="precios__filaprecios" id="precios">
+                    <li class="filaprecios__titulo">
+                        <img class="titulo__imagen" src="./img/desktop/calabaza.png" alt="precios">
+                        <h1 class="titulo__titulo">Lorem ipsum dolor sit.</h1>
+                    </li>
+                    <li class="filaprecios__tabla">
+                        <section href="#" class="tabla__columna">
+                            <h4 class="tabla__titulo">Lorem ipsum</h4>
+                            <div class="tabla__linea tabla__tamanolinea1"></div>
+                            <div class="tabla__linea tabla__tamanolinea2"></div>
+                            <section class="tabla__grupoprecio">
+                                <span class="grupoprecio__precio">10 €</span>
+                                <p class="grupoprecio__entrada">/entrada</p>
+                            </section>
+
+                            <ul class="tabla__listadocaracteristicas">
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__botonseleccionar">
+                                    <a href="#" class="botonseleccionar__boton">Lorem ipsum</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="tabla__columna">
+                            <h4 class="tabla__titulo">Lorem ipsum</h4>
+                            <div class="tabla__linea tabla__tamanolinea1"></div>
+                            <div class="tabla__linea tabla__tamanolinea2"></div>
+                            <section class="tabla__grupoprecio">
+                                <span class="grupoprecio__precio">10 €</span>
+                                <p class="grupoprecio__entrada">/entrada</p>
+                            </section>
+                        
+                            <ul class="tabla__listadocaracteristicas">
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__botonseleccionar">
+                                    <a href="#" class="botonseleccionar__boton">Lorem ipsum</a>
+                                </li>
+                            </ul>
+                        </section>
+                        
+                        <section class="tabla__columna">
+                            <h4 class="tabla__titulo">Lorem ipsum</h4>
+                            <div class="tabla__linea tabla__tamanolinea1"></div>
+                            <div class="tabla__linea tabla__tamanolinea2"></div>
+                            <section class="tabla__grupoprecio">
+                                <span class="grupoprecio__precio">10 €</span>
+                                <p class="grupoprecio__entrada">/entrada</p>
+                            </section>
+                        
+                            <ul class="tabla__listadocaracteristicas">
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__elemento">
+                                    <span class="elemento__resalteazul">Lorem</span>
+                                    Lorem, ipsum
+                                </li>
+                                <li class="listadocaracteristicas__botonseleccionar">
+                                    <a href="#" class="botonseleccionar__boton">Lorem ipsum</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                
+                    
+                </ul>
+
+
+            </section>
+
+            <section class="localizacion" id="localizacion">
+                <ul class="localizacion__ul">
+                    <li class="ul__titulo">
+                        <img class="titulo__img" src="./img/desktop/calabaza.png" alt="icono de imporante">
+                        <h1 class="titulo__h1">Lorem, ipsum dolor.</h1>
+                    </li>
+                    <li class="ul__localizacion-figure">
+                        <figure class="localizacion__imagen">
+                            
+                            <source srcset="./img/desktop/mas1367/mapa@1x.webp 1x, 
+                                            ./img/desktop/mas1367/mapa@2x.webp 2x" media="(min-width:1367px)">
+                            
+                            <source srcset="./img/desktop/max1366/mapa@1x.webp 1x,
+                                            ./img/desktop/max1366/mapa@2x.webp 2x" media="(min-width:1024px) and (max-width: 1366px)">
+                            
+                            <source srcset="./img/desktop/max1023/mapa@1x.webp 1x,
+                                            ./img/desktop/max1023/mapa@2x.webp 2x" media="(min-width:768px) and (max-width: 1023px)">
+                            
+                            <source srcset="./img/desktop/max767/mapa@1x.webp 1x,
+                                            ./img/desktop/max767/mapa@2x.webp 2x" media="(min-width:421px) and (max-width: 767px)">
+                            
+                            <source srcset="./img/desktop/max420/mapa@1x.webp 1x,
+                                            ./img/desktop/max420/mapa@2x.webp 2x" media="(max-width: 420px)">
+                            
+                            <!-- esta imagen por si nunguno coincide -->
+                            <img src="./img/desktop/mapa.png" alt="mapa localizacion nombre_empresa" class="imagen__img">
+                            <figcaption class="imagen__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis culpa commodi sit eveniet reprehenderit, architecto, sunt nihil accusantium ipsum obcaecati, laborum id numquam repellendus qui error animi unde perspiciatis.</figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+            </section>
+
+
+        </main>
+        <!-- Footer (final de la página, zona inferior) -->
+        <footer class="footer" id="contacto">
+            <section class="titulo"></section>
+
+            <section class="redes">
+
+                <ul class="redes__links">
+                    <li class="links__elemento">
+                        <a class="elemento__link" target="_blank" href="https://facebook.com/">
+                            <svg class="link__svg" viewBox="0 0 512 512" width="24" height="24">
+                                <path fill="" d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
+                            </svg>
+                            <h1 class="link__texto">Siguenos en facebook</h1>
+                        </a>
+                    </li>
+
+                    <li class="links__elemento">
+                        <a class="elemento__link" target="_blank" href="https://www.twitter.com/">
+                            <svg class="link__svg" viewBox="0 0 512 512" width="24" height="24">
+                                <path
+                                    d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"
+                                    fill=""></path>
+                            </svg>
+                            <h1 class="link__texto">Siguenos en twitter</h1>
+                        </a>
+                    </li>
+
+                    <li class="links__elemento">
+                        <a class="elemento__link" target="_blank" href="https://www.instagram.com/">
+                            <svg class="link__svg" width="18" height="24" viewBox="0 0 32 32">
+                                <path
+                                    d="M16 2.88c4.275 0 4.78.02 6.462.095 1.563.07 2.406.33 2.97.55.743.288 1.28.638 1.836 1.194.563.56.906 1.09 1.2 1.834.22.563.48 1.412.55 2.97.075 1.687.094 2.193.094 6.462s-.02 4.78-.094 6.462c-.07 1.562-.33 2.405-.55 2.97-.288.742-.637 1.28-1.194 1.835-.563.563-1.094.906-1.837 1.2-.563.22-1.413.48-2.97.55-1.687.075-2.193.094-6.462.094s-4.78-.02-6.463-.095c-1.563-.07-2.406-.33-2.97-.55-.743-.288-1.28-.637-1.837-1.194-.563-.562-.906-1.093-1.2-1.836-.22-.563-.48-1.413-.55-2.97-.075-1.687-.094-2.193-.094-6.462s.02-4.78.098-6.463c.07-1.564.33-2.407.55-2.97.288-.744.638-1.28 1.194-1.838.563-.564 1.094-.907 1.838-1.2.563-.22 1.412-.48 2.97-.55 1.68-.076 2.187-.095 6.462-.095zM16 0c-4.344 0-4.887.02-6.594.094-1.7.075-2.87.35-3.88.744-1.057.412-1.95.956-2.838 1.85-.894.888-1.438 1.78-1.85 2.83C.444 6.54.168 7.7.094 9.4.02 11.113 0 11.656 0 16s.02 4.887.094 6.594c.075 1.7.35 2.87.744 3.88.413 1.057.956 1.95 1.85 2.838.887.887 1.78 1.438 2.83 1.844 1.02.394 2.182.67 3.882.744 1.706.075 2.25.094 6.594.094s4.888-.02 6.594-.094c1.7-.075 2.87-.35 3.88-.744 1.05-.406 1.945-.956 2.832-1.844s1.438-1.78 1.844-2.83c.394-1.02.67-2.182.744-3.882.075-1.706.094-2.25.094-6.594s-.02-4.887-.094-6.594c-.075-1.7-.35-2.87-.744-3.88-.394-1.064-.938-1.957-1.83-2.845C28.424 1.8 27.53 1.25 26.48.843 25.46.45 24.3.173 22.6.1 20.888.016 20.344 0 16 0z"
+                                    fill=""></path>
+                                <path
+                                    d="M16 7.78c-4.537 0-8.22 3.682-8.22 8.22s3.682 8.22 8.22 8.22 8.22-3.682 8.22-8.22c0-4.537-3.682-8.22-8.22-8.22zm0 13.55c-2.944 0-5.33-2.386-5.33-5.33s2.386-5.33 5.33-5.33 5.33 2.386 5.33 5.33-2.386 5.33-5.33 5.33zM26.462 7.456c0 1.06-.86 1.92-1.92 1.92s-1.918-.86-1.918-1.92.86-1.92 1.92-1.92 1.918.86 1.918 1.92z"
+                                    fill=""></path>
+                            </svg>
+                            <h1 class="link__texto">Siguenos en instagram</h1>
+                        </a>
+                    </li>
+
+                    <li class="links__elemento">
+                        <a class="elemento__link" target="_blank" href="https://www.pinterest.com/">
+                            <svg class="link__svg" viewBox="0 0 512 512" width="24" height="24">
+                                <path fill="" d="M266.6 76.5c-100.2 0-150.7 71.8-150.7 131.7 0 36.3 13.7 68.5 43.2 80.6 4.8 2 9.2 0.1 10.6-5.3 1-3.7 3.3-13 4.3-16.9 1.4-5.3 0.9-7.1-3-11.8 -8.5-10-13.9-23-13.9-41.3 0-53.3 39.9-101 103.8-101 56.6 0 87.7 34.6 87.7 80.8 0 60.8-26.9 112.1-66.8 112.1 -22.1 0-38.6-18.2-33.3-40.6 6.3-26.7 18.6-55.5 18.6-74.8 0-17.3-9.3-31.7-28.4-31.7 -22.5 0-40.7 23.3-40.7 54.6 0 19.9 6.7 33.4 6.7 33.4s-23.1 97.8-27.1 114.9c-8.1 34.1-1.2 75.9-0.6 80.1 0.3 2.5 3.6 3.1 5 1.2 2.1-2.7 28.9-35.9 38.1-69 2.6-9.4 14.8-58 14.8-58 7.3 14 28.7 26.3 51.5 26.3 67.8 0 113.8-61.8 113.8-144.5C400.1 134.7 347.1 76.5 266.6 76.5z">&gt;</path>
+                            </svg>
+                            <h1 class="link__texto">Siguenos en pinterest</h1>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </section>
+
+            <section class="datos">
+                <h1>daos</h1>
+            </section>
+
+
+            <section class="contacto">
+                <form action="/" class="contacto__form">
+                    <ul class="form__titulo">
+                        <li>
+
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.9722 9.69428H9.02778V16.6387C9.02778 17.0221 8.71667 17.3332 8.33333 17.3332C7.95 17.3332 7.63889 17.0221 7.63889 16.6387V9.69428H0.694444C0.311111 9.69428 0 9.38317 0 8.99984C0 8.6165 0.311111 8.30539 0.694444 8.30539H7.63889V1.36095C7.63889 0.977615 7.95 0.666504 8.33333 0.666504C8.71667 0.666504 9.02778 0.977615 9.02778 1.36095V8.30539H15.9722C16.3556 8.30539 16.6667 8.6165 16.6667 8.99984C16.6667 9.38317 16.3556 9.69428 15.9722 9.69428Z"
+                                    fill="#F0F2FF"></path>
+                            </svg>
+                        </li>
+                        <li>
+
+                            <h1 class="titulo__cabecera">Formulario</h1>
+                        </li>
+
+                    </ul>
+                    <ul class="form__contenido">
+                        <li>
+                            <h1 class="contenido__nombre">Nombre:</h1>
+                        </li>
+                        <li>
+                            <input type="text" class="form__texto" placeholder="Escribe Nombre" class="form__nombre">
+
+                        </li>
+                            <!-- <label for="" class="contenido__nombre">Nombre:</label> -->
+                        <li>
+                            <label for="" class="contenido__nombre">Correo:</label>
+
+                        </li>
+                        <li>
+
+                            <input type="email" class="form__texto" placeholder="Escribe Email" class="form__correo">
+                        </li>
+                        <li>
+                            <label for="" class="contenido__nombre">Comentario:</label>
+                        
+                        </li>
+                        <li>
+                            <textarea name="texto" id="" cols="30" rows="4" class="form__texto" placeholder="Escribe el comentario"></textarea>
+                            <!-- <input type="email" class="form__texto" placeholder="Escribe Email" class="form__correo"> -->
+                        </li>
+                        <li>
+                            <button type="submit" class="form__enviar">Enviar</button>
+
+                        </li>
+                    </ul>
+                </form>
+            </section>
+            <section class="legal">
+                <h6 class="legal__texto">Copy Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis sequi nostrum ratione quos, </h6>
+            </section>
+            <section class="blanco"></section>
+        </footer>
     </div>
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+</body>
 </html>
